@@ -24,6 +24,12 @@ body{
     border:none;
     border-radius:15px;
     box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card-custom:hover{
+    transform: translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
 
 .speech{
@@ -55,6 +61,10 @@ body{
     margin-top:10px;
 }
 
+.cta-card{
+    background: linear-gradient(135deg,#eef5ff,#ffffff);
+}
+
 .footer{
     background:#1e1e1e;
     color:#ccc;
@@ -70,7 +80,7 @@ body{
 <!-- NAVBAR -->
 <nav class="navbar navbar-dark">
 <div class="container">
-    <a class="navbar-brand" href="index.html">PermuComb</a>
+<a class="navbar-brand" href="index.html">PermuComb</a>
 </div>
 </nav>
 
@@ -107,33 +117,32 @@ Berapa banyak susunan yang mungkin?
 <div id="j1" class="d-none mt-3">
 
 <div class="step">
-<b>Langkah 1: Identifikasi</b><br>
-Posisi berbeda → urutan penting → <b>Permutasi</b>
+<b>Langkah 1:</b> Posisi berbeda → urutan penting → Permutasi
 </div>
 
 <div class="step">
-<b>Langkah 2: Rumus</b>
+<b>Langkah 2:</b>
 <div class="math-box">
 $$ P(n,r) = \frac{n!}{(n-r)!} $$
 </div>
 </div>
 
 <div class="step">
-<b>Langkah 3: Substitusi</b>
+<b>Langkah 3:</b>
 <div class="math-box">
-$$ P(10,3) = \frac{10!}{(10-3)!} = \frac{10!}{7!} $$
+$$ P(10,3) = \frac{10!}{7!} $$
 </div>
 </div>
 
 <div class="step">
-<b>Langkah 4: Perhitungan</b>
+<b>Langkah 4:</b>
 <div class="math-box">
-$$ = 10 \times 9 \times 8 = 720 $$
+$$ 10 \times 9 \times 8 = 720 $$
 </div>
 </div>
 
 <div class="highlight">
-<b>Jawaban:</b> 720 susunan
+Jawaban: 720 susunan
 </div>
 
 </div>
@@ -145,9 +154,8 @@ $$ = 10 \times 9 \times 8 = 720 $$
 <h5>Soal Kombinasi 👥</h5>
 
 <div class="speech">
-Seorang guru ingin memilih 4 siswa dari 12 siswa<br>
-untuk mengikuti lomba cerdas cermat.<br><br>
-Berapa banyak cara memilih tim tersebut?
+Seorang guru memilih 4 siswa dari 12 siswa untuk lomba.<br><br>
+Berapa banyak cara?
 </div>
 
 <button class="btn btn-success" onclick="toggle('j2')">Lihat Pembahasan</button>
@@ -155,50 +163,34 @@ Berapa banyak cara memilih tim tersebut?
 <div id="j2" class="d-none mt-3">
 
 <div class="step">
-<b>Langkah 1: Identifikasi</b><br>
-Tidak ada posisi → urutan tidak penting → <b>Kombinasi</b>
+Urutan tidak penting → Kombinasi
 </div>
 
-<div class="step">
-<b>Langkah 2: Rumus</b>
-<div class="math-box">
-$$ C(n,r) = \frac{n!}{r!(n-r)!} $$
-</div>
-</div>
-
-<div class="step">
-<b>Langkah 3: Substitusi</b>
 <div class="math-box">
 $$ C(12,4) = \frac{12!}{4!8!} $$
 </div>
-</div>
 
-<div class="step">
-<b>Langkah 4: Perhitungan</b>
 <div class="math-box">
-$$ = \frac{12 \times 11 \times 10 \times 9}{4 \times 3 \times 2 \times 1} = 495 $$
-</div>
+$$ = 495 $$
 </div>
 
 <div class="highlight">
-<b>Jawaban:</b> 495 cara
+Jawaban: 495 cara
 </div>
 
 </div>
 </div>
 
 <!-- HOTS -->
-<div class="card card-custom p-4 mb-4">
+<div class="card card-custom p-4 mb-5">
 
 <h5>Soal HOTS 🔥</h5>
 
 <div class="speech">
-Sebuah kafe menyediakan 7 topping es krim.<br><br>
-
-Andi: 7 × 6 × 5<br>
-Siti: hasil Andi dibagi 3 × 2 × 1<br><br>
-
-Siapa yang benar?
+7 topping es krim dipilih 3.<br><br>
+Andi: 7×6×5<br>
+Siti: dibagi 3×2×1<br><br>
+Siapa benar?
 </div>
 
 <button class="btn btn-danger" onclick="toggle('j3')">Lihat Analisis</button>
@@ -206,54 +198,50 @@ Siapa yang benar?
 <div id="j3" class="d-none mt-3">
 
 <div class="step">
-<b>Langkah 1: Analisis Masalah</b><br>
-Memilih 3 topping dari 7 → tidak ada urutan
+Andi → Permutasi (salah konteks)
 </div>
 
 <div class="step">
-<b>Langkah 2: Analisis Andi</b>
-<div class="math-box">
-$$ 7 \times 6 \times 5 = 210 $$
-</div>
-
-<p>Ini adalah <b>Permutasi</b> (urutan diperhitungkan)</p>
-</div>
-
-<div class="step">
-<b>Langkah 3: Analisis Siti</b>
-
-<div class="math-box">
-$$ \frac{7 \times 6 \times 5}{3 \times 2 \times 1} $$
+Siti → Kombinasi
 </div>
 
 <div class="math-box">
-$$ = \frac{210}{6} = 35 $$
-</div>
-
-<p>Ini adalah <b>Kombinasi</b></p>
-</div>
-
-<div class="step">
-<b>Langkah 4: Kesimpulan Konsep</b><br>
-Urutan topping tidak penting → gunakan kombinasi
+$$ \frac{7×6×5}{3×2×1} = 35 $$
 </div>
 
 <div class="highlight">
-<b>Kesimpulan:</b> Siti benar ✅
+Siti benar ✅
 </div>
 
 <div class="speech mt-3">
-🧠 Insight penting:<br><br>
-Permutasi menghitung semua urutan<br>
-Kombinasi menghilangkan urutan yang sama
+Urutan tidak penting → kombinasi
 </div>
 
 </div>
 
 </div>
 
+<!-- CTA KE QUIZ -->
+<div class="card card-custom cta-card p-4 text-center">
+
+<h3>🎯 Siap Naik Level?</h3>
+<p class="text-muted">Waktunya uji kemampuanmu secara penuh</p>
+
+<div class="speech">
+Kamu sudah berlatih dan memahami konsepnya.<br><br>
+Sekarang tantangan sebenarnya dimulai…<br>
+<b>Coba kerjakan quiz dan lihat seberapa jauh pemahamanmu!</b> 🚀
 </div>
 
+<a href="quiz.html" class="btn btn-lg btn-warning px-5 mt-3">
+🔥 Mulai Quiz
+</a>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
 <div class="footer">
 <p>© 2026 PermuComb</p>
 </div>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Analisis - PermuComb</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<style>
+body{font-family:Poppins,sans-serif;background:#f8f9fa;}
+.navbar{background:linear-gradient(90deg,#1e3c72,#2a5298);}
+.card{border:none;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,0.08);}
+.step{background:#f1f5ff;padding:12px;border-radius:10px;margin-top:10px;}
+.math{background:#fff;padding:10px;border-radius:10px;text-align:center;margin:10px 0;}
+.insight{background:#fff3cd;padding:10px;border-radius:10px;margin-top:10px;}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="index.html">PermuComb</a>
+</div>
+</nav>
+
+<div class="container my-5">
+<h2>🔍 Analisis Lengkap (Tanpa Kesalahan)</h2>
+
+<!-- 1 -->
+<div class="card p-4 mb-4">
+<h5>1. Permutasi Jabatan</h5>
+
+<div class="step">n = 7, r = 3, urutan penting → permutasi</div>
+
+<div class="math">$$ P(7,3)=7×6×5=210 $$</div>
+
+<div class="insight">✔️ Jawaban: 210</div>
+</div>
+
+<!-- 2 -->
+<div class="card p-4 mb-4">
+<h5>2. Pemilihan Tim</h5>
+
+<div class="step">n = 10, r = 4, urutan tidak penting → kombinasi</div>
+
+<div class="math">$$ C(10,4)=210 $$</div>
+
+<div class="insight">✔️ Jawaban: 210</div>
+</div>
+
+<!-- 3 -->
+<div class="card p-4 mb-4">
+<h5>3. Meja Bundar</h5>
+
+<div class="step">Total 6 orang, pasangan jadi 1 → 5 objek</div>
+
+<div class="math">$$ (5-1)! = 4! = 24 $$</div>
+
+<div class="step">Pasangan bisa ditukar → ×2</div>
+
+<div class="math">$$ 24×2=48 $$</div>
+
+<div class="insight">✔️ Jawaban: 48</div>
+</div>
+
+<!-- 4 -->
+<div class="card p-4 mb-4">
+<h5>4. Bola</h5>
+
+<div class="step">2 merah dari 6 dan 1 biru dari 5</div>
+
+<div class="math">$$ C(6,2)=15,\; C(5,1)=5 $$</div>
+
+<div class="math">$$ 15×5=75 $$</div>
+
+<div class="insight">✔️ Jawaban: 75</div>
+</div>
+
+<!-- 5 -->
+<div class="card p-4 mb-4">
+<h5>5. MATEMATIKA</h5>
+
+<div class="step">Total 10 huruf</div>
+<div class="step">A=3, T=2, M=2</div>
+
+<div class="math">$$ \frac{10!}{3!2!2!} $$</div>
+
+<div class="math">$$ =151200 $$</div>
+
+<div class="insight">✔️ Jawaban: 151200</div>
+</div>
+
+<!-- 6 -->
+<div class="card p-4 mb-4">
+<h5>6. Jabat Tangan</h5>
+
+<div class="step">Setiap pasangan → kombinasi</div>
+
+<div class="math">$$ C(15,2)=\frac{15×14}{2}=105 $$</div>
+
+<div class="insight">✔️ Jawaban: 105</div>
+</div>
+
+<!-- 7 -->
+<div class="card p-4 mb-4">
+<h5>7. Buku Berkelompok</h5>
+
+<div class="step">3 kelompok → 3!</div>
+<div class="step">Susunan dalam kelompok</div>
+
+<div class="math">$$ 3!×5!×4!×3! $$</div>
+
+<div class="insight">✔️ Jawaban: 3!×5!×4!×3!</div>
+</div>
+
+<!-- 8 -->
+<div class="card p-4 mb-4">
+<h5>8. Tim Peneliti</h5>
+
+<div class="step">Minimal 3 biologi → kasus:</div>
+
+<div class="math">
+$$ C(7,3)C(5,2)=35×10=350 $$
+</div>
+
+<div class="math">
+$$ C(7,4)C(5,1)=35×5=175 $$
+</div>
+
+<div class="math">
+$$ C(7,5)=21 $$
+</div>
+
+<div class="math">
+$$ 350+175+21=546 $$
+</div>
+
+<div class="insight">✔️ Jawaban: 546</div>
+</div>
+
+<!-- 9 -->
+<div class="card p-4 mb-4">
+<h5>9. Bilangan Genap</h5>
+
+<div class="step">Digit terakhir genap → {0,2,4,6}</div>
+
+<div class="step">Kasus 1: terakhir = 0</div>
+<div class="math">$$ P(6,3)=120 $$</div>
+
+<div class="step">Kasus 2: terakhir ≠ 0</div>
+<div class="math">$$ 3×5×4×3=180 $$</div>
+
+<div class="math">$$ 120+180=300 $$</div>
+
+<div class="insight">✔️ Jawaban: 300</div>
+</div>
+
+<!-- 10 -->
+<div class="card p-4 mb-4">
+<h5>10. Delegasi</h5>
+
+<div class="step">Kasus:
+3L2P, 4L1P, 5L</div>
+
+<div class="math">
+$$ C(6,3)C(4,2)=20×6=120 $$
+</div>
+
+<div class="math">
+$$ C(6,4)C(4,1)=15×4=60 $$
+</div>
+
+<div class="math">
+$$ C(6,5)=6 $$
+</div>
+
+<div class="math">
+$$ 120+60+6=186 $$
+</div>
+
+<div class="insight">✔️ Jawaban: 186</div>
+</div>
+
+</div>
+
+</body>
+</html>

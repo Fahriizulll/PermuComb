@@ -24,6 +24,12 @@ body{
     border:none;
     border-radius:15px;
     box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card-custom:hover{
+    transform: translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
 
 .math-box{
@@ -47,6 +53,10 @@ body{
     border-radius:8px;
 }
 
+.cta-card{
+    background: linear-gradient(135deg,#eef5ff,#ffffff);
+}
+
 .footer{
     background:#1e1e1e;
     color:#ccc;
@@ -62,7 +72,7 @@ body{
 <!-- NAVBAR -->
 <nav class="navbar navbar-dark">
 <div class="container">
-    <a class="navbar-brand" href="index.html">PermuComb</a>
+<a class="navbar-brand" href="index.html">PermuComb</a>
 </div>
 </nav>
 
@@ -163,16 +173,13 @@ $$ C(n,r) = \frac{n!}{r!(n-r)!} $$
 </div>
 </div>
 
-<!-- KEGUNAAN SEHARI-HARI -->
+<!-- KEGUNAAN -->
 <div class="card card-custom p-4 mb-5">
 <h2>🌍 Kegunaan Sehari-hari</h2>
 
 <div class="speech">
-Mungkin kamu berpikir...<br>
-“Ini dipakai buat apa sih di dunia nyata?” 🤨
+Mungkin kamu berpikir... “Ini dipakai buat apa sih?” 🤨
 </div>
-
-<p>Jawabannya: <b>banyak banget</b>.</p>
 
 <button class="btn btn-success" onclick="toggle('contohReal')">Lihat Contoh Nyata</button>
 
@@ -180,34 +187,29 @@ Mungkin kamu berpikir...<br>
 
 <div class="highlight mb-3">
 <b>🔐 Password & PIN</b><br>
-Urutan angka itu penting → ini Permutasi
+Permutasi
 </div>
 
 <div class="highlight mb-3">
 <b>👥 Membentuk Tim</b><br>
-Tidak peduli urutan → ini Kombinasi
+Kombinasi
 </div>
 
 <div class="highlight mb-3">
 <b>🏆 Menentukan Juara</b><br>
-Juara 1, 2, 3 → urutan penting → Permutasi
+Permutasi
 </div>
 
 <div class="highlight mb-3">
 <b>🍔 Memilih Menu</b><br>
-Pilih 2 dari 5 makanan → Kombinasi
-</div>
-
-<div class="speech mt-3">
-Jadi sebenarnya...<br><br>
-Kamu sudah menggunakan konsep ini dalam kehidupan sehari-hari 😄
+Kombinasi
 </div>
 
 </div>
 </div>
 
 <!-- KESIMPULAN -->
-<div class="card card-custom p-4">
+<div class="card card-custom p-4 mb-5">
 <h3>🧠 Kesimpulan</h3>
 
 <ul>
@@ -216,13 +218,30 @@ Kamu sudah menggunakan konsep ini dalam kehidupan sehari-hari 😄
 </ul>
 
 <div class="speech">
-Tips sederhana:<br><br>
 👉 “Apakah posisi mempengaruhi hasil?”
 </div>
 </div>
 
+<!-- CTA -->
+<div class="card card-custom cta-card p-4 text-center">
+
+<h3>🚀 Siap Melihat Lebih Nyata?</h3>
+<p class="text-muted">Langkah berikutnya dalam perjalanan belajarmu</p>
+
+<div class="speech">
+Sekarang kamu sudah memahami konsep dasar.<br>
+Saatnya melihat bagaimana semuanya bekerja secara nyata 🤯
 </div>
 
+<a href="visualisasi.html" class="btn btn-lg btn-primary px-5 mt-3">
+🔍 Mulai Visualisasi
+</a>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
 <div class="footer">
 <p>© 2026 PermuComb</p>
 </div>

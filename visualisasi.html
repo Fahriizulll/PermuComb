@@ -9,7 +9,6 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<!-- MathJax -->
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
@@ -26,6 +25,12 @@ body{
     border:none;
     border-radius:15px;
     box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card-custom:hover{
+    transform: translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
 
 .math-box{
@@ -43,6 +48,10 @@ body{
     margin-bottom:15px;
 }
 
+.cta-card{
+    background: linear-gradient(135deg,#eef5ff,#ffffff);
+}
+
 .footer{
     background:#1e1e1e;
     color:#ccc;
@@ -58,12 +67,13 @@ body{
 <!-- NAVBAR -->
 <nav class="navbar navbar-dark">
 <div class="container">
-    <a class="navbar-brand" href="index.html">PermuComb</a>
+<a class="navbar-brand" href="index.html">PermuComb</a>
 </div>
 </nav>
 
 <div class="container my-5">
 
+<!-- INPUT -->
 <div class="card card-custom p-4 mb-5">
 
 <h2>🎮 Visualisasi Interaktif</h2>
@@ -85,14 +95,16 @@ Masukkan nilai <b>n</b> (total objek) dan <b>r</b> (yang dipilih)
 </div>
 </div>
 
-<button class="btn btn-primary mt-4" onclick="hitung()">Hitung</button>
+<button class="btn btn-primary mt-4 px-4" onclick="hitung()">
+Hitung Sekarang
+</button>
 
 </div>
 
 <!-- HASIL -->
-<div class="card card-custom p-4">
+<div class="card card-custom p-4 mb-5">
 
-<h3>📊 Hasil</h3>
+<h3>📊 Hasil Perhitungan</h3>
 
 <div id="output" class="mt-3 d-none">
 
@@ -108,14 +120,32 @@ Masukkan nilai <b>n</b> (total objek) dan <b>r</b> (yang dipilih)
 
 </div>
 
+<!-- CTA KE LATIHAN -->
+<div class="card card-custom cta-card p-4 text-center">
+
+<h3>🧠 Siap Menguji Pemahamanmu?</h3>
+<p class="text-muted">Sekarang waktunya kamu mencoba sendiri</p>
+
+<div class="speech">
+Kamu sudah melihat bagaimana rumus bekerja secara nyata.<br><br>
+Sekarang saatnya naik level…<br>
+<b>Coba selesaikan soal-soal latihan dan uji pemahamanmu!</b> 💪
 </div>
 
+<a href="latihan.html" class="btn btn-lg btn-success px-5 mt-3">
+📝 Mulai Latihan
+</a>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
 <div class="footer">
 <p>© 2026 PermuComb</p>
 </div>
 
 <script src="visualisasi.js"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
