@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Visualisasi - PermuComb</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- MathJax -->
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<style>
+body{
+    font-family:'Poppins', sans-serif;
+    background:#f8f9fa;
+}
+
+.navbar{
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+}
+
+.card-custom{
+    border:none;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.math-box{
+    background:#fff;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+    font-size:1.2rem;
+}
+
+.speech{
+    background:#e9f3ff;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+.footer{
+    background:#1e1e1e;
+    color:#ccc;
+    padding:20px;
+    text-align:center;
+    margin-top:50px;
+}
+</style>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-dark">
+<div class="container">
+    <a class="navbar-brand" href="index.html">PermuComb</a>
+</div>
+</nav>
+
+<div class="container my-5">
+
+<div class="card card-custom p-4 mb-5">
+
+<h2>🎮 Visualisasi Interaktif</h2>
+
+<div class="speech">
+Sekarang giliran kamu mencoba langsung 😄<br><br>
+Masukkan nilai <b>n</b> (total objek) dan <b>r</b> (yang dipilih)
+</div>
+
+<div class="row mt-4">
+<div class="col-md-6">
+<label>Nilai n:</label>
+<input type="number" id="n" class="form-control" placeholder="Contoh: 5">
+</div>
+
+<div class="col-md-6">
+<label>Nilai r:</label>
+<input type="number" id="r" class="form-control" placeholder="Contoh: 2">
+</div>
+</div>
+
+<button class="btn btn-primary mt-4" onclick="hitung()">Hitung</button>
+
+</div>
+
+<!-- HASIL -->
+<div class="card card-custom p-4">
+
+<h3>📊 Hasil</h3>
+
+<div id="output" class="mt-3 d-none">
+
+<div class="speech" id="insight"></div>
+
+<h5>Permutasi:</h5>
+<div class="math-box" id="hasilPermutasi"></div>
+
+<h5 class="mt-4">Kombinasi:</h5>
+<div class="math-box" id="hasilKombinasi"></div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+<p>© 2026 PermuComb</p>
+</div>
+
+<script src="visualisasi.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PermuComb - Belajar Permutasi & Kombinasi</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== GLOBAL ===== */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* ===== NAVBAR ===== */
+.navbar{
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+}
+
+.navbar-brand{
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* ===== HERO ===== */
+.hero{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+}
+
+.hero h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero p{
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+.btn-custom{
+    background-color: #ffc107;
+    border: none;
+    color: #000;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.btn-custom:hover{
+    background-color: #e0a800;
+}
+
+/* ===== FEATURES ===== */
+.features{
+    padding: 60px 0;
+}
+
+.feature-card{
+    border: none;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.feature-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* ===== CTA ===== */
+.cta{
+    background: linear-gradient(90deg, #2a5298, #1e3c72);
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* ===== FOOTER ===== */
+.footer{
+    background-color: #1e1e1e;
+    color: #ccc;
+    padding: 20px 0;
+    text-align: center;
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">PermuComb</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="materi.html">Materi</a></li>
+        <li class="nav-item"><a class="nav-link" href="visualisasi.html">Visualisasi</a></li>
+        <li class="nav-item"><a class="nav-link" href="latihan.html">Latihan</a></li>
+        <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero">
+  <div class="container text-center">
+    <h1>Belajar Permutasi & Kombinasi</h1>
+    <p>Pahami konsep, lihat visualisasi, dan uji kemampuanmu dalam satu platform interaktif.</p>
+    
+    <div class="mt-4">
+      <a href="materi.html" class="btn btn-custom me-2">Mulai Belajar</a>
+      <a href="quiz.html" class="btn btn-light">Coba Quiz</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FEATURES ===== -->
+<section class="features">
+  <div class="container text-center">
+    <h2 class="mb-5">Fitur Utama</h2>
+
+    <div class="row g-4">
+
+     <div class="col-md-3">
+  <a href="materi.html" class="text-decoration-none text-dark">
+    <div class="card feature-card p-3">
+      <h5>📚 Materi</h5>
+      <p>Penjelasan lengkap tentang permutasi dan kombinasi.</p>
+    </div>
+  </a>
+</div>
+
+<div class="col-md-3">
+  <a href="visualisasi.html" class="text-decoration-none text-dark">
+    <div class="card feature-card p-3">
+      <h5>🎮 Visualisasi</h5>
+      <p>Simulasi interaktif untuk memahami konsep.</p>
+    </div>
+  </a> </div>
+
+      <div class="col-md-3">
+         <a href="latihan.html" class="text-decoration-none text-dark">
+        <div class="card feature-card p-3">
+          <h5>🧠 Latihan</h5>
+          <p>Soal dan pembahasan untuk memperdalam pemahaman.</p>
+        </div>
+      </a> </div>
+
+      <div class="col-md-3">
+        <a href="quiz.html" class="text-decoration-none text-dark">
+        <div class="card feature-card p-3">
+          <h5>📝 Quiz</h5>
+          <p>Uji kemampuanmu dengan sistem penilaian otomatis.</p>
+        </div>
+         </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta">
+  <div class="container">
+    <h2>Siap Menguasai Permutasi & Kombinasi?</h2>
+    <p>Mulai sekarang dan tingkatkan pemahaman matematikamu.</p>
+    <a href="materi.html" class="btn btn-warning mt-3">Mulai Sekarang</a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 PermuComb | Media Pembelajaran Interaktif</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Latihan - PermuComb</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<style>
+body{
+    font-family:'Poppins', sans-serif;
+    background:#f8f9fa;
+}
+
+.navbar{
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+}
+
+.card-custom{
+    border:none;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.speech{
+    background:#e9f3ff;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+.math-box{
+    background:#fff;
+    padding:12px;
+    border-radius:10px;
+    text-align:center;
+    margin:10px 0;
+}
+
+.step{
+    background:#f1f5ff;
+    padding:12px;
+    border-radius:8px;
+    margin-top:10px;
+}
+
+.highlight{
+    background:#fff3cd;
+    padding:10px;
+    border-radius:8px;
+    margin-top:10px;
+}
+
+.footer{
+    background:#1e1e1e;
+    color:#ccc;
+    padding:20px;
+    text-align:center;
+    margin-top:50px;
+}
+</style>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-dark">
+<div class="container">
+    <a class="navbar-brand" href="index.html">PermuComb</a>
+</div>
+</nav>
+
+<div class="container my-5">
+
+<!-- INTRO -->
+<div class="card card-custom p-4 mb-5">
+<h2>🧠 Latihan Tingkat Lanjut</h2>
+
+<div class="speech">
+Sekarang kamu tidak hanya menghitung...<br><br>
+Tapi juga memahami <b>mengapa</b> suatu rumus digunakan 😄
+</div>
+</div>
+
+<!-- SOAL PERMUTASI -->
+<div class="card card-custom p-4 mb-4">
+
+<h5>Soal Permutasi 🎯</h5>
+
+<div class="speech">
+Dalam sebuah organisasi mahasiswa, terdapat 10 orang pengurus inti.<br><br>
+Akan dipilih 3 orang untuk menempati posisi:
+<ul>
+<li>Ketua</li>
+<li>Sekretaris</li>
+<li>Bendahara</li>
+</ul>
+Berapa banyak susunan yang mungkin?
+</div>
+
+<button class="btn btn-primary" onclick="toggle('j1')">Lihat Pembahasan</button>
+
+<div id="j1" class="d-none mt-3">
+
+<div class="step">
+<b>Langkah 1: Identifikasi</b><br>
+Posisi berbeda → urutan penting → <b>Permutasi</b>
+</div>
+
+<div class="step">
+<b>Langkah 2: Rumus</b>
+<div class="math-box">
+$$ P(n,r) = \frac{n!}{(n-r)!} $$
+</div>
+</div>
+
+<div class="step">
+<b>Langkah 3: Substitusi</b>
+<div class="math-box">
+$$ P(10,3) = \frac{10!}{(10-3)!} = \frac{10!}{7!} $$
+</div>
+</div>
+
+<div class="step">
+<b>Langkah 4: Perhitungan</b>
+<div class="math-box">
+$$ = 10 \times 9 \times 8 = 720 $$
+</div>
+</div>
+
+<div class="highlight">
+<b>Jawaban:</b> 720 susunan
+</div>
+
+</div>
+</div>
+
+<!-- SOAL KOMBINASI -->
+<div class="card card-custom p-4 mb-4">
+
+<h5>Soal Kombinasi 👥</h5>
+
+<div class="speech">
+Seorang guru ingin memilih 4 siswa dari 12 siswa<br>
+untuk mengikuti lomba cerdas cermat.<br><br>
+Berapa banyak cara memilih tim tersebut?
+</div>
+
+<button class="btn btn-success" onclick="toggle('j2')">Lihat Pembahasan</button>
+
+<div id="j2" class="d-none mt-3">
+
+<div class="step">
+<b>Langkah 1: Identifikasi</b><br>
+Tidak ada posisi → urutan tidak penting → <b>Kombinasi</b>
+</div>
+
+<div class="step">
+<b>Langkah 2: Rumus</b>
+<div class="math-box">
+$$ C(n,r) = \frac{n!}{r!(n-r)!} $$
+</div>
+</div>
+
+<div class="step">
+<b>Langkah 3: Substitusi</b>
+<div class="math-box">
+$$ C(12,4) = \frac{12!}{4!8!} $$
+</div>
+</div>
+
+<div class="step">
+<b>Langkah 4: Perhitungan</b>
+<div class="math-box">
+$$ = \frac{12 \times 11 \times 10 \times 9}{4 \times 3 \times 2 \times 1} = 495 $$
+</div>
+</div>
+
+<div class="highlight">
+<b>Jawaban:</b> 495 cara
+</div>
+
+</div>
+</div>
+
+<!-- HOTS -->
+<div class="card card-custom p-4 mb-4">
+
+<h5>Soal HOTS 🔥</h5>
+
+<div class="speech">
+Sebuah kafe menyediakan 7 topping es krim.<br><br>
+
+Andi: 7 × 6 × 5<br>
+Siti: hasil Andi dibagi 3 × 2 × 1<br><br>
+
+Siapa yang benar?
+</div>
+
+<button class="btn btn-danger" onclick="toggle('j3')">Lihat Analisis</button>
+
+<div id="j3" class="d-none mt-3">
+
+<div class="step">
+<b>Langkah 1: Analisis Masalah</b><br>
+Memilih 3 topping dari 7 → tidak ada urutan
+</div>
+
+<div class="step">
+<b>Langkah 2: Analisis Andi</b>
+<div class="math-box">
+$$ 7 \times 6 \times 5 = 210 $$
+</div>
+
+<p>Ini adalah <b>Permutasi</b> (urutan diperhitungkan)</p>
+</div>
+
+<div class="step">
+<b>Langkah 3: Analisis Siti</b>
+
+<div class="math-box">
+$$ \frac{7 \times 6 \times 5}{3 \times 2 \times 1} $$
+</div>
+
+<div class="math-box">
+$$ = \frac{210}{6} = 35 $$
+</div>
+
+<p>Ini adalah <b>Kombinasi</b></p>
+</div>
+
+<div class="step">
+<b>Langkah 4: Kesimpulan Konsep</b><br>
+Urutan topping tidak penting → gunakan kombinasi
+</div>
+
+<div class="highlight">
+<b>Kesimpulan:</b> Siti benar ✅
+</div>
+
+<div class="speech mt-3">
+🧠 Insight penting:<br><br>
+Permutasi menghitung semua urutan<br>
+Kombinasi menghilangkan urutan yang sama
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+<p>© 2026 PermuComb</p>
+</div>
+
+<script>
+function toggle(id){
+    document.getElementById(id).classList.toggle("d-none");
+}
+</script>
+
+</body>
+</html>
